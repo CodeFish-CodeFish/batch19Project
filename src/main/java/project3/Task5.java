@@ -29,7 +29,24 @@ The sum: 39
 
         String sentence = "Importance of Human";
 
-        System.out.println(sentence.lastIndexOf(' ',12));
+        int indexOfFirstSpace = sentence.indexOf(" ");
+
+        System.out.println(indexOfFirstSpace);
+        int indexOfFirstWord = sentence.indexOf(sentence.charAt(indexOfFirstSpace -1));
+        System.out.println("Index of the first word: " + indexOfFirstWord);
+
+        int indexOfSecondSpace= sentence.indexOf(' ', indexOfFirstSpace + 1);
+        int indexOfSecondOne = sentence.lastIndexOf(sentence.charAt(indexOfSecondSpace -1));
+        System.out.println("Index of the first word: " + indexOfSecondOne);
+
+        int indexOfLastCharacter = sentence.lastIndexOf(sentence.charAt(sentence.length() -1));
+        System.out.println(indexOfLastCharacter);
+
+        int result = indexOfFirstWord + indexOfSecondOne + indexOfLastCharacter;
+
+        System.out.println(result);
+
+
         //charAt()
         //
 //        sentence.lastIndexOf(' ')
