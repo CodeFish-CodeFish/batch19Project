@@ -11,6 +11,7 @@ public class Task2 {
         System.out.println("Please enter the Min number: ");
         int min = scanner.nextInt();
 
+        scanner.close();
         int sum = 0;
 
         for (int i = min; i <= max; i ++){
