@@ -12,4 +12,9 @@ public class Eagle extends Bird{
     public static void main(String[] args) {
         Bird eagle = new Eagle();
     }
+
+    @Override
+    public void fly() {
+        System.out.println("Eagle is flying!");
+    }
 }

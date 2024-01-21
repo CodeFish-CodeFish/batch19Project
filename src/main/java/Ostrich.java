@@ -13,7 +13,7 @@ public class Ostrich extends Bird{
     }
 
     @Override
-    boolean fly(){
+    public void fly(){
         System.out.println("Ostrich is trying to fly");
         return false;
     }
